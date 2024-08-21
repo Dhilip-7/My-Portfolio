@@ -1,0 +1,175 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+main {
+    max-width: 800px;
+    margin: 80px auto 0;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Specific section styles */
+.education-item, .course-item, .certificate-item {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+}
+
+#skills ul li {
+    background-color: #ecf0f1;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    list-style-type: none;
+}
+
+#links ul {
+    padding: 0;
+}
+
+#links ul li {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
+
+#links ul li a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#links ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        position: static;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    main {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.dark-mode header {
+    background-color: #2c3e50;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: #3498db;
+}
+
+.dark-mode .education-item, .dark-mode .course-item, .dark-mode .certificate-item {
+    background-color: #2c2c2c;
+    border-left-color: #3498db;
+}
+
+.dark-mode #skills ul li {
+    background-color: #2c2c2c;
+}
+
+.dark-mode #links ul li a {
+    color: #3498db;
+}
+
+.dark-mode footer {
+    background-color: #2c3e50;
+}
